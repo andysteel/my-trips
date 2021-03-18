@@ -31,7 +31,7 @@ const Map = ({ places }: MapProps) => (
           position={[latitude, longitude]}
           key={`place-${id}`}
           title={name}
-        ></Marker>
+        />
       )
     })}
   </MapContainer>
