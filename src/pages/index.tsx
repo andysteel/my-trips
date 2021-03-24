@@ -13,6 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES)
 
   return {
+    revalidate: 60 * 60 * 6,
     props: {
       places
     }
